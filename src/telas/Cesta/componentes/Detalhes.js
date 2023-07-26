@@ -3,7 +3,7 @@ import { Image,View,StyleSheet, TouchableOpacity, Alert } from "react-native";
 import Texto from '../../../../src/componentes/Texto.js';
 import { ImageBackground } from "react-native-web";
 
-let contador= '1';
+
 export default function Detalhes ({nome, logoFazenda, nomeFazenda, descricao, preco, botao}){
 return <>
     <Texto style={estilos.nome}>{nome}</Texto>
@@ -23,7 +23,7 @@ return <>
         <Texto style={estilos.preco}>
             {preco}
         </Texto>
-    <TouchableOpacity style={estilos.botao} onPress={() => Alert.alert(contador)}>
+    <TouchableOpacity style={estilos.botao} onPress={() =>({})}>
         <Texto style={estilos.textoBotao}>{botao}</Texto>
     </TouchableOpacity>
 </>
